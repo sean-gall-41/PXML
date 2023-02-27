@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<dwml version="1.0" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+      <creation-date refresh-frequency='PT1H'>2023-02-26T19:50:48-06:00</creation-date>
+     <category>current observations and forecast</category>
+    </product>
+    <source>
+      <production-center>Austin/San Antonio, TX</production-center>
+      <credit>https://www.weather.gov/ewx</credit>
+      <more-information>https://www.nws.noaa.gov/forecasts/xml/</more-information>
+    </source>
+  </head>
+  <data type="forecast">
+
+  <location>
+    <location-key>point1</location-key>
+    <point latitude="30.27" longitude="-97.66"/>
+    <area-description>4 Miles E Austin TX</area-description>
+    <height datum="mean sea level" height-units="feet">472</height>
+  </location>
+<moreWeatherInformation applicable-location="point1">https://forecast.weather.gov/MapClick.php?lat=30.27&amp;lon=-97.66</moreWeatherInformation>
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p12h-n14-1</layout-key>
+      <start-valid-time period-name="Tonight">2023-02-26T19:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday">2023-02-27T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2023-02-27T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2023-02-28T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Tuesday Night">2023-02-28T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2023-03-01T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2023-03-01T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2023-03-02T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday Night">2023-03-02T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday">2023-03-03T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday Night">2023-03-03T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday">2023-03-04T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday Night">2023-03-04T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Sunday">2023-03-05T06:00:00-06:00</start-valid-time>
+  </time-layout>
+
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time period-name="Tonight">2023-02-26T19:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2023-02-27T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Tuesday Night">2023-02-28T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2023-03-01T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday Night">2023-03-02T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday Night">2023-03-03T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday Night">2023-03-04T18:00:00-06:00</start-valid-time>
+  </time-layout>
+
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p24h-n7-2</layout-key>
+      <start-valid-time period-name="Monday">2023-02-27T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2023-02-28T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2023-03-01T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2023-03-02T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday">2023-03-03T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday">2023-03-04T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Sunday">2023-03-05T06:00:00-06:00</start-valid-time>
+  </time-layout>
+
+
+  <parameters applicable-location="point1">
+
+    <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+      <name>Daily Minimum Temperature</name>
+        <value>59</value>
+        <value>50</value>
+        <value>65</value>
+        <value>65</value>
+        <value>42</value>
+        <value>40</value>
+        <value>45</value>
+    </temperature>
+
+    <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-2">
+      <name>Daily Maximum Temperature</name>
+        <value>82</value>
+        <value>86</value>
+        <value>84</value>
+        <value>86</value>
+        <value>65</value>
+        <value>70</value>
+        <value>74</value>
+    </temperature>
+
+    <probability-of-precipitation  type="12 hour" units="percent" time-layout="k-p12h-n14-1">
+      <name>12 Hourly Probability of Precipitation</name>
+        <value>20</value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value>20</value>
+        <value>20</value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+    </probability-of-precipitation>
+
+    <weather time-layout="k-p12h-n14-1">
+      <name>Weather Type, Coverage, Intensity</name>
+        <weather-conditions weather-summary="Partly Cloudy then Slight Chance Showers"/>
+        <weather-conditions weather-summary="Becoming Sunny"/>
+        <weather-conditions weather-summary="Mostly Clear"/>
+        <weather-conditions weather-summary="Sunny"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+        <weather-conditions weather-summary="Mostly Cloudy then Slight Chance T-storms and Breezy"/>
+        <weather-conditions weather-summary="Windy. Slight Chance T-storms then Clear"/>
+        <weather-conditions weather-summary="Sunny"/>
+        <weather-conditions weather-summary="Mostly Clear"/>
+        <weather-conditions weather-summary="Sunny"/>
+        <weather-conditions weather-summary="Mostly Clear"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+    </weather>
+
+    <conditions-icon type="forecast-NWS" time-layout="k-p12h-n14-1">
+      <name>Conditions Icon</name>        <icon-link>https://forecast.weather.gov/DualImage.php?i=nsct&amp;j=nshra&amp;jp=20</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/sct.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/nfew.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/few.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/nbkn.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/bkn.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/nbkn.png</icon-link>
+        <icon-link>https://forecast.weather.gov/DualImage.php?i=bkn&amp;j=hi_tsra&amp;jp=20</icon-link>
+        <icon-link>https://forecast.weather.gov/DualImage.php?i=hi_ntsra&amp;j=nwind_skc&amp;ip=20</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/skc.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/nfew.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/few.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/nfew.png</icon-link>
+        <icon-link>https://forecast.weather.gov/newimages/medium/sct.png</icon-link>
+    </conditions-icon>
+
+    <wordedForecast time-layout="k-p12h-n14-1" dataSource="ewxNetcdf" wordGenerator="markMitchell">
+      <name>Text Forecast</name>
+        <text>A 20 percent chance of showers after midnight.  Increasing clouds, with a low around 59. South wind 15 to 20 mph becoming west 10 to 15 mph after midnight. Winds could gust as high as 30 mph. </text>
+        <text>Partly sunny, then gradually becoming sunny, with a high near 82. West northwest wind 5 to 10 mph, with gusts as high as 20 mph. </text>
+        <text>Mostly clear, with a low around 50. Calm wind becoming south southwest around 5 mph in the evening. </text>
+        <text>Sunny, with a high near 86. West wind 5 to 10 mph becoming south southeast in the afternoon. </text>
+        <text>Mostly cloudy, with a low around 65. South wind 10 to 15 mph, with gusts as high as 20 mph. </text>
+        <text>Mostly cloudy, with a high near 84. South southwest wind around 10 mph. </text>
+        <text>Mostly cloudy, with a low around 65. South wind 5 to 15 mph, with gusts as high as 20 mph. </text>
+        <text>A 20 percent chance of showers and thunderstorms after noon.  Partly sunny, with a high near 86. Breezy, with a south wind 10 to 15 mph becoming west southwest 20 to 25 mph in the afternoon. Winds could gust as high as 35 mph. </text>
+        <text>A 20 percent chance of showers and thunderstorms before midnight.  Mostly clear, with a low around 42. Windy, with a west northwest wind 25 to 30 mph, with gusts as high as 45 mph. </text>
+        <text>Sunny, with a high near 65.</text>
+        <text>Mostly clear, with a low around 40.</text>
+        <text>Sunny, with a high near 70.</text>
+        <text>Mostly clear, with a low around 45.</text>
+        <text>Mostly sunny, with a high near 74.</text>
+    </wordedForecast>
+
+</parameters>
+</data>
+<data type="current observations">
+  <location>
+      <location-key>point1</location-key>
+      <point latitude="30.18" longitude="-97.68"/>
+      <area-description>Austin-Bergstrom International Airport, TX</area-description>
+      <height datum="mean sea level" height-units="feet">486</height>
+  </location>
+  <moreWeatherInformation applicable-location="point1">https://www.nws.noaa.gov/data/obhistory/KAUS.html</moreWeatherInformation>  <time-layout time-coordinate="local">  <layout-key>k-p1h-n1-1</layout-key>  <start-valid-time period-name="current">2023-02-26T19:53:00-06:00</start-valid-time>  </time-layout>  <parameters applicable-location="point1">  <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">  <value>71</value>  </temperature>  <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">  <value>63</value>  </temperature>  <humidity type="relative" time-layout="k-p1h-n1-1">  <value>76</value>  </humidity>  <weather time-layout="k-p1h-n1-1">  <name>Weather Type, Coverage, Intensity</name>  <weather-conditions weather-summary="A Few Clouds"/>  <weather-conditions>  <value>  <visibility units="statute miles">10.00</visibility>  </value>  </weather-conditions>  </weather>  <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">  <name>Conditions Icon</name>  <icon-link>https://forecast.weather.gov/newimages/medium/nfew.png</icon-link>  </conditions-icon>  <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">  <value>170</value>  </direction>  <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">  <value>30</value>  </wind-speed>  <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">  <value>14</value>  </wind-speed>      <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">          <value>29.74</value>      </pressure>  </parameters></data></dwml>
