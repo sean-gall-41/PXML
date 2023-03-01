@@ -5,11 +5,10 @@
 use File::Basename;
 use lib dirname (__FILE__);
 
-use XMLParser;
+use XMLEventReader;
 
 $INPUT_XML_FILE = "simple.xml";
 
-$xml_parser = new XMLParser();
+$er = new XMLEventReader($INPUT_XML_FILE);
 
-$xml_parser->parse($INPUT_XML_FILE);
 

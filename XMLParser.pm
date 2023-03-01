@@ -1,7 +1,9 @@
 #!/usr/bin/perl
 
 use XMLTokenizer;
+
 package XMLParser;
+
 sub new {
   my $class = shift;
   my $self = {
