@@ -7,7 +7,7 @@ use lib dirname (__FILE__);
 
 use XMLEventReader;
 
-$INPUT_XML_FILE = "simple.xml";
+$INPUT_XML_FILE = "MapClick.xml";
 
 $er = new XMLEventReader($INPUT_XML_FILE);
 

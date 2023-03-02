@@ -70,7 +70,7 @@ sub new {
   return $self;
 }
 
-package Namespace;
+package NameSpace;
 
 sub new {
   my $class = shift;
